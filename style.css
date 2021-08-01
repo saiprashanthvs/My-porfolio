@@ -1,0 +1,527 @@
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+
+  
+}
+p{
+  font-size: 1.2rem;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.d-flex{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.d-center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap !important;
+}
+.d-start{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+header{
+  width: 100%;
+  height: auto;
+  background-color: rgb(11, 85, 223);
+  
+  z-index: 100;
+}
+.head{
+  width: 100%;
+  height: auto;
+  margin: 0px auto;
+  padding: 10px;
+  background-color: rgb(11, 85, 223);
+  
+  
+}
+.logo h1 a{
+  color: white !important;
+}
+
+.head ul{
+  display: flex;
+}
+.head ul li{
+  list-style-type: none;
+  padding: 10px;
+  font-weight: 500;
+  transition:  all 0.2s ease-in;
+  font-size: 1.4rem;
+}
+.head ul li:hover{
+  border-bottom: 1px solid rgb(235, 8, 114);
+  
+
+}
+.head ul li a:hover{
+  color: white;
+
+}
+#ham{
+  display: none;
+ background-color: rgb(11, 85, 223);
+ border: none;
+ 
+
+}
+
+/* hero section */
+.hero{
+  width: 100%;
+  height: auto;
+  background: rgb(18, 126, 189);
+  min-height: 100vh;
+}
+p{
+  word-wrap:wrap;
+}
+.container{
+  width: 80%;
+  min-height: 90vh;
+  margin: auto !important;
+  padding: 20px, 10px;
+}
+ .container .col-1{
+ flex-basis: 50%;
+  height: auto;
+}
+
+.col-2{
+  width: 400px;
+  height: 450px;
+  border-radius: 50%;
+  /* border: double 4px rgb(226, 21, 100); */
+  box-shadow: 1px 1px 6px 9px blueviolet;
+ 
+  margin-top: 60px;
+  overflow-y: hidden;
+ 
+ 
+
+  
+}
+.col-2 img{
+  width: 100%;
+  height: 100%;
+  border-radius: 60%;
+  object-fit: cover;
+  background-position: center 60% center;
+ overflow-y: hidden;
+  
+  
+  
+  
+}
+.col-1{
+  margin-top: 20px !important;
+}
+.col-1 h1,h3,h4{
+  font-size: 4rem;
+  color: white;
+
+}
+.col-1 h4{
+  font-size: 1.9rem;
+}
+.col-1 h3{
+  font-size: 2rem;
+}
+.col-1 h1 span,h3 span{
+  color: rgb(238, 83, 143)
+}
+/* about me section */
+.about{
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+  
+
+}
+.about-me{
+  position: relative;
+}
+.clip{
+  width: 200px;
+  height: 200px;
+  background-color: rgb(11, 156, 223);
+  clip-path: circle(40% at 0% 0%);
+  z-index: -3;
+  position: relative;
+  z-index: -1;
+  position: absolute;
+  
+}
+
+.about-photo{
+  width: 400px;
+  height: 400px;
+  overflow-y: hidden;
+  object-fit: cover;
+  background-size: 90%;
+
+}
+#dec::after{
+  position: absolute;
+  content: "";
+  top: 70px;
+  right: 45%;
+  width: 40px;
+  height: 5px;
+  color: red;
+  background-color: red;
+  
+}
+#dec::before{
+  position: absolute;
+  content: "";
+  top: 70px;
+  left: 45%;
+  width: 40px;
+  height: 5px;
+  color: red;
+  background-color: red;
+  
+}
+.about-title{
+  text-align: center;
+  
+  margin-bottom: 5px;
+  
+  
+}
+.about-title h1{
+  font-size: 3rem;
+}
+.about-title h4{
+  font-size: 3rem;
+}
+.about-photo img{
+  width: 100%;
+  height: 100%;
+}
+.about-des{
+
+  
+  width: 450px;
+  height: auto;
+  margin-left: 2rem;
+
+  
+
+}
+.about-des p{
+  line-height: 1.6rem;
+  font-size: 1.2rem;
+}
+.about-des h2{
+  line-height: 4rem;
+}
+#hire-me{
+  padding: 10px;
+  text-align: center;
+  background-color:rgb(226, 21, 100) ;
+  color: white;
+  text-transform: capitalize;
+  margin-top: 10px;
+  display: inline-block;
+  margin: 10px;
+}
+#hire-me:hover{
+  background-color: red;
+  transform: scale(1.1);
+  transition: all 0.3s ease-in-out;
+}
+/* my skills section */
+.skills{
+  width: 100%;
+min-height: 100vh;
+position: relative;
+}
+.clip3{
+  clip-path: polygon(0% 100%, 0% 9%, 90% 10%);
+  width: 100%;
+  height: 100%;
+  background-color: rgb(11, 156, 223);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -4;
+  
+}
+.skill-main{
+  width: 80%;
+  margin: 10px auto;
+  height: auto;
+}
+
+ .skills h1{
+   font-size: 3rem;
+   text-align: center;
+   padding: 20px;
+ }
+ .skills h1::after{
+   position: absolute;
+   top: 10%;
+   right: 40%;
+   content: "";
+   width: 80px;
+   height: 10px;
+   background-color: rgb(235, 8, 114);
+   
+ }
+ 
+ .skills h1::before{
+  position: absolute;
+  top: 10%;
+  left: 40%;
+  content: "";
+  width: 80px;
+  height: 10px;
+  background-color: rgb(235, 8, 114);
+  
+}
+.progress{
+  width: 100%;
+  height: 15px;
+  background-color: grey;
+  position: relative;
+}
+.html,.css,.bootstrap,.wp{
+  width: 80%;
+  background-color: red;
+  height: 15px;
+  position: absolute;
+  top: 0;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  
+  animation-name: progress;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
+  animation-duration: 2s;
+}
+.js{
+  width: 60%;
+  position: absoulte;
+  top: 0;
+  height: 15px;
+  background-color: red;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  animation-name: progress;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
+  animation-duration: 2s;
+
+}
+@keyframes progress {
+  0%{
+    width: 0%;
+  }
+  50%{
+    width: 50%;
+  }
+  100%{
+    width: 100%;
+  }
+  
+}
+.s1,.s2{
+  font-size: 1.5rem;
+  font-weight: 900;
+}
+.skill{
+  background-color: hsla(0, 13%, 91%, 0.623);
+  padding: 20px 10px 40px;
+  margin-bottom: 10px;
+}
+/* contact me */
+.contact-me{
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+}
+.clip4{
+  clip-path: polygon(0% 100%, 0% 9%, 90% 100%);
+  width: 100%;
+  height: 100%;
+  background-color: rgb(11, 156, 223);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -4;
+  
+}
+.contact{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  place-items: center;
+}
+.contact-me h1{
+  text-align: center;
+  font-size: 3rem;
+}
+#get{
+  text-align: center;
+  color: rgb(221, 22, 145);
+  font-weight: bold;
+}
+#text{
+  color: rgb(221, 22, 145);
+  font-weight: bold;
+
+}
+
+.name,.des{
+  margin-right: 10px;
+  padding: 10px;
+
+}
+.contact p{
+  line-height: 1.7rem;
+}
+.contact-input input{
+  padding: 10px;
+  margin:10px 0px;
+ 
+}
+#send{
+  padding: 15px;
+  background-color: rgb(221, 22, 145);
+  color: white;
+  text-align: center;
+  border-radius: 30px;
+  display: block;
+  width: 35%;
+  margin: 10px;
+}
+#send:hover{
+  background-color: rgb(228, 28, 71);
+  
+  transition: all 0.3s ease-in-out;
+}
+/* footer */
+footer{
+  background-color: black;
+  text-align: center;
+  color: white;
+  padding: 5px;
+
+}
+footer span{
+  color: rgb(228, 28, 71);
+  
+
+}
+@media all and (max-width:968px) {
+  .contact{
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+    
+  }
+  .address1,.contact-input{
+    padding: 10px 5px 20px ;
+    margin-left: 20px;
+  }
+  
+  
+}
+@media  all and (max-width:800px) {
+  .header{
+    position: relative;
+    height: auto;
+  }
+  .links{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgb(11, 156, 223);
+    z-index: 1;
+    width: 50%;
+    height: 100vh;
+    display: none;
+    text-align: center;
+    
+    
+    
+  }
+  .links ul{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 1rem;
+
+
+  }
+  .links ul li{
+    padding: 20px 5px;
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid white;
+  }
+  .links ul li:hover{
+    background-color: crimson;
+    color: white;
+  }
+  #ham{
+    display: block;
+  }
+  .links.active{
+    display: block;
+    transition: translateX(500px);
+    
+   
+   }
+  .col-2{
+    margin-top: 5px;
+  }
+
+  
+}
+
+@media all and (max-width:460px) {
+  .col-1 h1{
+    font-size: 3rem !important;
+    color: white;
+  
+  }
+  .col-2{
+    margin-top: 5px;
+  }
+  .col-1 h4{
+    font-size: 1.5rem;
+  }
+  .col-1 h3{
+    font-size: 1.6rem;
+  }
+  /* html{
+   font-size: 70%;
+  } */
+  .full-address{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  
+}
